@@ -1,0 +1,1090 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Avenir Heavy";
+  src: url("../../assets/fonts/Avenir Heavy.ttf");
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Avenir Heavy";
+}
+
+body {
+  background-color: #ededed;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.header__input {
+  display: none;
+}
+.header__input + label {
+  display: none;
+  position: fixed;
+  right: 8px;
+  top: 8px;
+  z-index: 10;
+  height: 48px;
+  aspect-ratio: 1/1;
+}
+.header__input + label::before, .header__input + label::after {
+  transition: top 0.5s ease-in-out, left 0.5s ease-in-out, bottom 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+  content: "";
+  background-color: #bd0f3e;
+  width: 100%;
+  height: 6px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border-radius: 16px;
+  box-shadow: 0px 21px #bd0f3e;
+}
+.header__input + label::after {
+  top: auto;
+  bottom: 0%;
+  box-shadow: none;
+}
+.header__input:checked + label::before {
+  background-color: #bd0f3e;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  box-shadow: 0px 0px #bd0f3e;
+}
+.header__input:checked + label::after {
+  background-color: #bd0f3e;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+header {
+  width: 100%;
+  max-height: 64px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: #fff;
+  transition: max-height 0.5s ease-in-out, position 1s linear 1s;
+  overflow: hidden;
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.5);
+}
+header .header__logo {
+  display: block;
+  height: 64px;
+}
+header nav {
+  width: 100%;
+  display: flex;
+}
+header nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav ul li {
+  width: 33.3333333333%;
+  height: 64px;
+  list-style: none;
+  display: grid;
+  place-items: center;
+  position: relative;
+  pointer-events: none;
+}
+header nav ul li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  background-image: linear-gradient(0.25turn, #bd0f3e, #bd0f3e);
+  background-size: 0% 100%;
+  background-origin: border-box;
+  background-position: -50% 100%;
+  background-repeat: no-repeat;
+  -webkit-mask-image: url("../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
+  mask: url("../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
+  -webkit-mask-position-x: center;
+  -webkit-mask-position-y: center;
+  mask-position: center;
+  -webkit-mask-size: 100% 150%;
+  mask-size: 100% 150%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  transition: background-size 0.2s ease-in;
+}
+header nav ul li:hover::before {
+  background-size: 100% 100%;
+}
+header nav ul li a {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  white-space: nowrap;
+  font-weight: bold;
+  z-index: 10;
+  pointer-events: auto;
+  background-image: linear-gradient(to right, #fff, #fff 50%, #bd0f3e 50%);
+  background-size: 200% 100%;
+  background-origin: border-box;
+  background-position: 100% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.02s ease-in;
+  transition-delay: 0.035s;
+}
+header nav ul li:hover > a {
+  background-position: 0% 100%;
+}
+header a.header__reservation {
+  height: 64px;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__input + label {
+    display: block;
+  }
+  .header__input:checked + label + header {
+    max-height: 350px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+}
+main {
+  margin-top: 64px;
+}
+
+footer {
+  position: relative;
+}
+
+.home main .wrapper {
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+}
+.home main .wrapper .welcome {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+.home main .wrapper .welcome img {
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+.home main .wrapper .welcome img:nth-child(1) {
+  height: 100%;
+  transform: translateZ(-10px) scale(2);
+}
+.home main .wrapper .welcome img:nth-child(2) {
+  transform: translateZ(-2px) scale(1);
+}
+.home main .wrapper .visite {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+.home main .wrapper .visite > div {
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  width: 45%;
+  background-color: white;
+  border: solid 1px #c89d01;
+  border-radius: 1rem;
+  box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.home main .wrapper .visite > div img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+.home main .wrapper .visite > div a {
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  background-color: #bd0f3e;
+  border-radius: 64px;
+}
+.home main .wrapper .comments {
+  padding: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+.home main .wrapper .comments .comment {
+  width: 20vw;
+}
+.home main .wrapper .comments .comment q {
+  display: block;
+  padding: 1rem;
+  background-color: #bd0f3e;
+}
+.home main .wrapper .comments .comment cite {
+  display: block;
+  padding: 0.5rem;
+  background-color: #c89d01;
+  text-align: center;
+}
+
+@keyframes comment {
+  from {
+    transform: translateX(calc(100vw + var(--pos) * 20vw));
+  }
+  to {
+    transform: translateX(calc(-20vw + var(--pos) * 20vw));
+  }
+}
+@media screen and (max-width: 1024px) {
+  .home main .wrapper .visite {
+    flex-direction: column;
+  }
+  .home main .wrapper .visite > div {
+    width: 100%;
+    aspect-ratio: 2/1;
+    margin-bottom: 2rem;
+  }
+  .home main .wrapper .comments {
+    flex-direction: column;
+    width: 100%;
+  }
+  .home main .wrapper .comments .comment {
+    width: 100%;
+  }
+}
+.personnalities main {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: dense;
+  grid-auto-rows: 180px;
+  padding: 20px;
+}
+.personnalities main .personnality {
+  background-position: top;
+  background-size: cover;
+  border-radius: 8px;
+}
+.personnalities main .personnality:nth-child(1) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(2) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(3) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(4) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(5) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(6) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(7) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(8) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(9) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(10) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(11) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(12) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(13) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(14) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(15) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(16) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(17) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(18) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(19) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(20) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(21) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(22) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(23) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(24) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(25) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(26) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(27) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(28) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(29) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(30) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(31) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(32) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(33) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(34) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(35) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(36) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(37) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(38) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(39) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(40) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(41) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(42) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(43) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(44) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(45) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(46) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(47) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(48) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(49) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(50) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(51) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(52) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(53) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(54) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(55) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(56) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(57) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(58) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(59) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(60) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(61) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(62) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(63) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(64) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(65) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(66) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(67) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(68) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(69) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(70) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(71) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(72) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(73) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(74) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(75) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(76) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(77) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(78) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(79) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(80) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(81) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(82) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(83) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(84) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(85) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(86) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(87) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(88) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(89) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(90) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(91) {
+  grid-row: auto/span 1;
+}
+.personnalities main .personnality:nth-child(92) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(93) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(94) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(95) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(96) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(97) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(98) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(99) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(100) {
+  grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(1) {
+  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+}
+.personnalities main .personnality:nth-child(2) {
+  background-image: url("../../assets/img/personnalities/11043907.webp");
+}
+.personnalities main .personnality:nth-child(3) {
+  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+}
+.personnalities main .personnality:nth-child(4) {
+  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(5) {
+  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+}
+.personnalities main .personnality:nth-child(6) {
+  background-image: url("../../assets/img/personnalities/43252812.jpg");
+}
+.personnalities main .personnality:nth-child(7) {
+  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+}
+.personnalities main .personnality:nth-child(8) {
+  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(9) {
+  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+}
+.personnalities main .personnality:nth-child(10) {
+  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(11) {
+  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(12) {
+  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+}
+.personnalities main .personnality:nth-child(13) {
+  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+}
+.personnalities main .personnality:nth-child(14) {
+  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+}
+.personnalities main .personnality:nth-child(15) {
+  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+}
+.personnalities main .personnality:nth-child(16) {
+  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+}
+.personnalities main .personnality:nth-child(17) {
+  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+}
+.personnalities main .personnality:nth-child(18) {
+  background-image: url("../../assets/img/personnalities/cyril.jpg");
+}
+.personnalities main .personnality:nth-child(19) {
+  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(20) {
+  background-image: url("../../assets/img/personnalities/image.jpg");
+}
+.personnalities main .personnality:nth-child(21) {
+  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+}
+.personnalities main .personnality:nth-child(22) {
+  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+}
+.personnalities main .personnality:nth-child(23) {
+  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+}
+.personnalities main .personnality:nth-child(24) {
+  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+}
+.personnalities main .personnality:nth-child(25) {
+  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+}
+.personnalities main .personnality:nth-child(26) {
+  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+}
+.personnalities main .personnality:nth-child(27) {
+  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+}
+.personnalities main .personnality:nth-child(28) {
+  background-image: url("../../assets/img/personnalities/Matt+Pokora.jpg");
+}
+.personnalities main .personnality:nth-child(29) {
+  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+}
+.personnalities main .personnality:nth-child(30) {
+  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(31) {
+  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(32) {
+  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(33) {
+  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+}
+.personnalities main .personnality:nth-child(34) {
+  background-image: url("../../assets/img/personnalities/stromae.jpg");
+}
+.personnalities main .personnality:nth-child(35) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(36) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(37) {
+  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+}
+.personnalities main .personnality:nth-child(38) {
+  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+}
+.personnalities main .personnality:nth-child(39) {
+  background-image: url("../../assets/img/personnalities/11043907.webp");
+}
+.personnalities main .personnality:nth-child(40) {
+  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+}
+.personnalities main .personnality:nth-child(41) {
+  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(42) {
+  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+}
+.personnalities main .personnality:nth-child(43) {
+  background-image: url("../../assets/img/personnalities/43252812.jpg");
+}
+.personnalities main .personnality:nth-child(44) {
+  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+}
+.personnalities main .personnality:nth-child(45) {
+  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(46) {
+  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+}
+.personnalities main .personnality:nth-child(47) {
+  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(48) {
+  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(49) {
+  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+}
+.personnalities main .personnality:nth-child(50) {
+  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+}
+.personnalities main .personnality:nth-child(51) {
+  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+}
+.personnalities main .personnality:nth-child(52) {
+  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+}
+.personnalities main .personnality:nth-child(53) {
+  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+}
+.personnalities main .personnality:nth-child(54) {
+  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+}
+.personnalities main .personnality:nth-child(55) {
+  background-image: url("../../assets/img/personnalities/cyril.jpg");
+}
+.personnalities main .personnality:nth-child(56) {
+  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(57) {
+  background-image: url("../../assets/img/personnalities/image.jpg");
+}
+.personnalities main .personnality:nth-child(58) {
+  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+}
+.personnalities main .personnality:nth-child(59) {
+  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+}
+.personnalities main .personnality:nth-child(60) {
+  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+}
+.personnalities main .personnality:nth-child(61) {
+  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+}
+.personnalities main .personnality:nth-child(62) {
+  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+}
+.personnalities main .personnality:nth-child(63) {
+  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+}
+.personnalities main .personnality:nth-child(64) {
+  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+}
+.personnalities main .personnality:nth-child(65) {
+  background-image: url("../../assets/img/personnalities/Matt+Pokora.jpg");
+}
+.personnalities main .personnality:nth-child(66) {
+  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+}
+.personnalities main .personnality:nth-child(67) {
+  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(68) {
+  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(69) {
+  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(70) {
+  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+}
+.personnalities main .personnality:nth-child(71) {
+  background-image: url("../../assets/img/personnalities/stromae.jpg");
+}
+.personnalities main .personnality:nth-child(72) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(73) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(74) {
+  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+}
+.personnalities main .personnality:nth-child(75) {
+  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+}
+.personnalities main .personnality:nth-child(76) {
+  background-image: url("../../assets/img/personnalities/11043907.webp");
+}
+.personnalities main .personnality:nth-child(77) {
+  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+}
+.personnalities main .personnality:nth-child(78) {
+  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(79) {
+  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+}
+.personnalities main .personnality:nth-child(80) {
+  background-image: url("../../assets/img/personnalities/43252812.jpg");
+}
+.personnalities main .personnality:nth-child(81) {
+  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+}
+.personnalities main .personnality:nth-child(82) {
+  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(83) {
+  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+}
+.personnalities main .personnality:nth-child(84) {
+  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+}
+.personnalities main .personnality:nth-child(85) {
+  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+}
+.personnalities main .personnality:nth-child(86) {
+  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+}
+.personnalities main .personnality:nth-child(87) {
+  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+}
+.personnalities main .personnality:nth-child(88) {
+  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+}
+.personnalities main .personnality:nth-child(89) {
+  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+}
+.personnalities main .personnality:nth-child(90) {
+  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+}
+.personnalities main .personnality:nth-child(91) {
+  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+}
+.personnalities main .personnality:nth-child(92) {
+  background-image: url("../../assets/img/personnalities/cyril.jpg");
+}
+.personnalities main .personnality:nth-child(93) {
+  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(94) {
+  background-image: url("../../assets/img/personnalities/image.jpg");
+}
+.personnalities main .personnality:nth-child(95) {
+  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+}
+.personnalities main .personnality:nth-child(96) {
+  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+}
+.personnalities main .personnality:nth-child(97) {
+  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+}
+.personnalities main .personnality:nth-child(98) {
+  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+}
+.personnalities main .personnality:nth-child(99) {
+  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+}
+.personnalities main .personnality:nth-child(100) {
+  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+}
+.personnalities main .personnality:nth-child(101) {
+  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+}
+.personnalities main .personnality:nth-child(102) {
+  background-image: url("../../assets/img/personnalities/Matt+Pokora+Sculpture+hyperrealiste+hyperrealisme+hyperrealistic+hyperrealism+scenographie+scenography+experience+immersive+set+design+decors+decoration+visual+merchandising+museum+exposition+immersion+immersif.jpg");
+}
+.personnalities main .personnality:nth-child(103) {
+  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+}
+.personnalities main .personnality:nth-child(104) {
+  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(105) {
+  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(106) {
+  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+}
+.personnalities main .personnality:nth-child(107) {
+  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+}
+.personnalities main .personnality:nth-child(108) {
+  background-image: url("../../assets/img/personnalities/stromae.jpg");
+}
+.personnalities main .personnality:nth-child(109) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(110) {
+  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+}
+.personnalities main .personnality:nth-child(111) {
+  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+}
+
+@media screen and (max-width: 1200px) {
+  .personnalities main {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 850px) {
+  .personnalities main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 500px) {
+  .personnalities main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+body.story main {
+  height: calc(100vh - 64px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  perspective: 10px;
+  position: relative;
+}
+body.story main .parallax_bg {
+  transform-style: preserve-3d;
+  z-index: -1;
+}
+body.story main .parallax_bg > img {
+  position: absolute;
+  background-blend-mode: difference;
+}
+body.story main .parallax_bg > img:nth-child(1) {
+  transform: translateZ(-2px) scale(1.44);
+  top: 2%;
+  left: 12%;
+}
+body.story main .parallax_bg > img:nth-child(2) {
+  transform: translateZ(-3px) scale(1.43);
+  top: 5%;
+  right: 12%;
+}
+body.story main .parallax_bg > img:nth-child(3) {
+  transform: translateZ(-9px) scale(2.85);
+  top: 14%;
+  left: -10%;
+}
+body.story main .parallax_bg > img:nth-child(4) {
+  transform: translateZ(-5px) scale(2.25);
+  top: 22%;
+  right: 0;
+}
+body.story main .parallax_bg > img:nth-child(5) {
+  transform: translateZ(-4px) scale(1.4);
+  top: 32%;
+  left: 40%;
+}
+body.story main .parallax_bg > img:nth-child(6) {
+  transform: translateZ(-4px) scale(2.1);
+  top: 42%;
+  right: 0;
+}
+body.story main .parallax_bg > img:nth-child(7) {
+  transform: translateZ(-10px) scale(4);
+  top: 52%;
+  left: -10%;
+}
+body.story main .parallax_bg > img:nth-child(8) {
+  transform: translateZ(-4px) scale(2.1);
+  top: 62%;
+  right: -12%;
+}
+body.story main .parallax_bg > img:nth-child(9) {
+  transform: translateZ(-4px) scale(1.4);
+  top: 59%;
+  left: -10%;
+}
+body.story main .parallax_bg > img:nth-child(10) {
+  transform: translateZ(-3px) scale(1.3);
+  top: 62%;
+  left: 24%;
+}
+body.story main .parallax_bg > img:nth-child(11) {
+  transform: translateZ(-1px) scale(0.99);
+  top: 58%;
+  right: 24%;
+}
+body.story main .parallax_bg > img:nth-child(12) {
+  transform: translateZ(-10px) scale(8);
+  top: 85%;
+  left: -10%;
+  z-index: -1;
+}
+body.story main .parallax_bg > img:nth-child(13) {
+  transform: translateZ(-8px) scale(5.4);
+  top: 90%;
+  right: 10%;
+}
+body.story main .parallax_fg {
+  padding: 0 10%;
+}
+body.story main .parallax_fg .fg__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+body.story main .parallax_fg .fg__container h1 {
+  margin: 2rem 0;
+  font-size: 3rem;
+  text-align: center;
+}
+body.story main .parallax_fg .fg__container img {
+  margin-bottom: 2rem;
+  height: 8rem;
+  object-fit: cover;
+  object-position: center;
+}
+body.story main .parallax_fg p {
+  font-size: 1.5rem;
+  margin-bottom: 16rem;
+  padding: 1rem;
+  background: rgb(255, 255, 255);
+}
+body.story main .parallax_fg p:last-of-type {
+  margin-bottom: 0rem;
+}
+body.story main .parallax_fg [href="#"] {
+  display: none;
+}
+body.story main .parallax_fg a {
+  position: absolute;
+  border-radius: 64px;
+  padding: 0.5rem 3rem;
+  margin: 1rem 0;
+  background-color: #bd0f3e;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  word-wrap: none;
+}
+
+body:target main .parallax_fg * {
+  opacity: 0;
+}
+body:target main .parallax_fg *[href="#"] {
+  display: inline-block;
+}
+body:target main .parallax_fg *[href="#hide"] {
+  display: none;
+}
+body:target .parallax_fg a {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  body.story main .parallax_fg {
+    padding: 0 1%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

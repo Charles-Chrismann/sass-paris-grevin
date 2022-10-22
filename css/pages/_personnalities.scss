@@ -1,0 +1,49 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+.personnalities {
+
+    main {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-flow: dense;
+        grid-auto-rows: 180px;
+        padding: 20px;
+
+        .personnality {
+            background-position: top;
+            background-size: cover;
+            border-radius: 8px;
+            @include mixins.randomHeightsOnChilds(600px);
+
+            
+
+            $i: 1;
+            @each $bg in variables.$pbgs {
+                &:nth-child(#{$i}){
+                    background-image: url("../../assets/img/personnalities/" + #{$bg});
+                }
+                $i: $i + 1;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .personnalities main {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .personnalities main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .personnalities main {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,174 @@
+@use "../abstracts/mixins";
+@use "../abstracts/variables";
+
+body.story {
+
+  main {
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 10px;
+    position: relative;
+
+    .parallax_bg {
+      // height: 100%;
+      transform-style: preserve-3d;
+      z-index: -1;
+      // background-color: red;
+
+      > img {
+        position: absolute;
+        background-blend-mode: difference;
+        &:nth-child(1) {
+          @include mixins.parallaxeDistance(-2, 1.2);
+          top: 2%;
+          left: 12%;
+        }
+        &:nth-child(2) {
+          @include mixins.parallaxeDistance(-3, 1.1);
+          top: 5%;
+          right: 12%;
+        }
+
+        &:nth-child(3) {
+          @include mixins.parallaxeDistance(-9, 1.5);
+          top: 14%;
+          left: -10%;
+        }
+
+        &:nth-child(4) {
+          @include mixins.parallaxeDistance(-5, 1.5);
+          top: 22%;
+          right: 0;
+        }
+
+        &:nth-child(5) {
+          @include mixins.parallaxeDistance(-4, 1);
+          top: 32%;
+          left: 40%;
+        }
+
+        &:nth-child(6) {
+          @include mixins.parallaxeDistance(-4, 1.5);
+          top: 42%;
+          right: 0;
+        }
+
+        &:nth-child(7) {
+          @include mixins.parallaxeDistance(-10, 2);
+          top: 52%;
+          left: -10%;
+        }
+
+        &:nth-child(8) {
+          @include mixins.parallaxeDistance(-4, 1.5);
+          top: 62%;
+          right: -12%;
+        }
+
+        &:nth-child(9) {
+          @include mixins.parallaxeDistance(-4, 1);
+          top: 59%;
+          left: -10%;
+        }
+
+        &:nth-child(10) {
+          @include mixins.parallaxeDistance(-3, 1);
+          top: 62%;
+          left: 24%;
+        }
+
+        &:nth-child(11) {
+          @include mixins.parallaxeDistance(-1, 0.9);
+          top: 58%;
+          right: 24%;
+        }
+
+        &:nth-child(12) {
+          @include mixins.parallaxeDistance(-10, 4);
+          top: 85%;
+          left: -10%;
+          z-index: -1;
+        }
+
+        &:nth-child(13) {
+          @include mixins.parallaxeDistance(-8, 3);
+          top: 90%;
+          right: 10%;
+        }
+      }
+    }
+
+    .parallax_fg {
+      padding: 0 10%;
+
+      .fg__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        h1 {
+          margin: 2rem 0;
+          font-size: 3rem;
+          text-align: center;
+        }
+        img {
+          margin-bottom: 2rem;
+          height: 8rem;
+          object-fit: cover;
+          object-position: center;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        margin-bottom: 16rem;
+        padding: 1rem;
+
+        background: rgba(255, 255, 255, 1);
+      }
+      p:last-of-type {
+        margin-bottom: 0rem;
+      }
+
+      [href="#"] {
+        display: none;
+      }
+
+      a {
+        position: absolute;
+        border-radius: 64px;
+        padding: 0.5rem 3rem;
+        margin: 1rem 0;
+        background-color: variables.$main-color;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        word-wrap: none;
+      }
+    }
+  }
+}
+
+body:target {
+  
+  main .parallax_fg *{
+    opacity: 0;
+
+    &[href="#"] {
+      display: inline-block;
+    }
+    &[href="#hide"] {
+      display: none;
+    }
+  }
+  .parallax_fg a {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body.story main .parallax_fg {
+    padding: 0 1%;
+  }
+}

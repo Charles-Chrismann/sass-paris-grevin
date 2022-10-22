@@ -1,0 +1,215 @@
+@use "../abstracts/variables";
+
+$menu-transition-time: 0.5s;
+.header__input {
+    display: none;
+
+    + label {
+        display: none;
+        
+        position: fixed;
+        // inset: 8px 8px 0 0;
+        right: 8px;
+        top: 8px;
+        
+        z-index: 10;
+        height: 48px;
+        aspect-ratio: 1/1;
+        
+        &::before, &::after {
+            transition: top #{$menu-transition-time} ease-in-out, left #{$menu-transition-time} ease-in-out, bottom #{$menu-transition-time} ease-in-out, transform #{$menu-transition-time} ease-in-out, box-shadow #{$menu-transition-time} ease-in-out;
+            content: '';
+            background-color: variables.$main-color;
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            left: 0%;
+            top: 0%;
+            border-radius: 16px;
+            
+            box-shadow: 0px 21px variables.$main-color;
+        }
+        
+        &::before {
+
+        }
+
+        &::after {
+            top: auto;
+            bottom: 0%;
+            box-shadow: none;
+        }
+    }
+    &:checked +label::before{
+        background-color: variables.$main-color;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        box-shadow: 0px 0px variables.$main-color;
+    }
+    &:checked +label::after{
+        background-color: variables.$main-color;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%) rotate(-45deg);
+    }
+}
+
+header {
+    width: 100%;
+    max-height: 64px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    justify-items: center;
+    align-items: center;
+    background-color: #fff;
+    transition: max-height $menu-transition-time ease-in-out, position 1s linear 1s;
+    overflow: hidden;
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, 0.5);
+
+
+    // animation: test 1s;
+
+    .header__logo {
+        display: block;
+        height: 64px;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            li {
+                width: calc(100% / 3);
+                height: 64px;
+                list-style: none;
+                display: grid;
+                place-items: center;
+                position: relative;
+                pointer-events: none;
+
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    // inset: 50% 0 0 50%;
+                    // transform: translate(-50%, -50%);
+                    height: 100%;
+                    // width: 100%;
+                    // transform: scale(1.1, 1);
+                    background-image: linear-gradient(0.25turn,variables.$main-color, variables.$main-color);
+                    // background: red;
+                    background-size: 0% 100%;
+                    background-origin: border-box;
+                    background-position: -50% 100%;
+                    background-repeat: no-repeat;
+                    -webkit-mask-image: url('../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png');
+                    mask: url('../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png');
+                            
+                    -webkit-mask-position-x: center;
+                    -webkit-mask-position-y: center;
+                    mask-position: center;
+                            
+                    -webkit-mask-size: 100% 150%;
+                    mask-size: 100% 150%;
+                            
+                    -webkit-mask-repeat: no-repeat;
+                    mask-repeat: no-repeat;
+                    transition: background-size 0.2s ease-in;
+                    
+                }
+            
+                &:hover::before {
+                    background-size: 100% 100%;
+                }
+                a {
+                    display: grid;
+                    place-items: center;
+                    padding: 1rem;
+                    white-space: nowrap;
+                    // color: variables.$main-color;
+                    font-weight: bold;
+                    // font-size: 1rem;
+                    z-index: 10;
+                    pointer-events: auto;
+                    
+                    
+                    background-image: linear-gradient(to right, #fff, #fff 50%, variables.$main-color 50%);
+                    // background-image: linear-gradient(to right, red, red);
+                    background-size: 200% 100%;
+                    background-origin: border-box;
+                    background-position: 100% 100%;
+                    background-repeat: no-repeat;
+                    
+                    
+                    
+                    // background: red;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    transition: background-position 0.02s ease-in;
+                    transition-delay: 0.035s;
+                }
+                &:hover > a {
+                    // color: #fff;
+                    background-position: 0% 100%;
+                }
+            }
+        }
+    }
+
+    a.header__reservation {
+        height: 64px;
+        display: grid;
+        place-items: center;
+    }
+        
+}
+
+// @keyframes test {
+//     from {
+//       position: sticky;
+//       top: 0;
+//       background: green;
+//     }
+//     to {
+//       position: absolute;
+//       top: 0;
+//       background: red;
+//     }
+// }
+
+@media screen and (max-width: 1024px) {
+    .header__input {
+        
+        + label {
+            display: block;
+        }
+
+        &:checked +label + header{
+        // position: absolute;
+        max-height: 350px;
+
+        }
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+
+        nav ul {
+            flex-direction: column;
+
+            
+        }
+    }
+}

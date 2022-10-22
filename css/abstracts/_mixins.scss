@@ -1,0 +1,26 @@
+@use "sass:math";
+@use "sass:list";
+
+@mixin randomHeightsOnChilds($maxHeight) {
+    $sizes: 1, 1, 2, 2, 2, 2;
+    @for $i from 1 to 100 + 1 {
+        &:nth-child(#{$i}) {
+           // height: (100 -) / 100 * $maxHeight;
+            grid-row: auto / span list.nth($sizes, math.random(length($sizes)));
+            // margin-bottom: #{math.random(48)}px;
+        }
+    }
+}
+
+@mixin parallaxeDistance($zDistance, $scaleValue, $perspective: 10) {
+    transform: translateZ(#{$zDistance}px) scale($scaleValue * math.div(($perspective - $zDistance), $perspective));
+}
+
+// @mixin pos($itemCount) {
+//     @for $i from 1 to 8 + 1 {
+//         &:nth-child(#{$i}) {
+//            --pos: #{$i - 1};
+//            animation-delay: -#{$i}s;
+//         }
+//     }
+// }
