@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Avenir Heavy";
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body {
@@ -297,34 +297,34 @@ footer {
   grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(2) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(3) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(4) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(5) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(6) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(7) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(8) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(9) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(10) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(11) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(12) {
   grid-row: auto/span 2;
@@ -333,10 +333,10 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(14) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(15) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(16) {
   grid-row: auto/span 2;
@@ -363,16 +363,16 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(24) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(25) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(26) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(27) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(28) {
   grid-row: auto/span 2;
@@ -381,37 +381,37 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(30) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(31) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(32) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(33) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(34) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(35) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(36) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(37) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(38) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(39) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(40) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(41) {
   grid-row: auto/span 1;
@@ -426,13 +426,13 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(45) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(46) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(47) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(48) {
   grid-row: auto/span 2;
@@ -447,7 +447,7 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(52) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(53) {
   grid-row: auto/span 2;
@@ -456,25 +456,25 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(55) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(56) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(57) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(58) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(59) {
   grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(60) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(61) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(62) {
   grid-row: auto/span 2;
@@ -483,13 +483,13 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(64) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(65) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(66) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(67) {
   grid-row: auto/span 2;
@@ -501,16 +501,16 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(70) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(71) {
   grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(72) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(73) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(74) {
   grid-row: auto/span 2;
@@ -522,22 +522,22 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(77) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(78) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(79) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(80) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(81) {
   grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(82) {
-  grid-row: auto/span 1;
+  grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(83) {
   grid-row: auto/span 2;
@@ -546,13 +546,13 @@ footer {
   grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(85) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(86) {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(87) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(88) {
   grid-row: auto/span 2;
@@ -561,13 +561,13 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(90) {
-  grid-row: auto/span 2;
-}
-.personnalities main .personnality:nth-child(91) {
   grid-row: auto/span 1;
 }
-.personnalities main .personnality:nth-child(92) {
+.personnalities main .personnality:nth-child(91) {
   grid-row: auto/span 2;
+}
+.personnalities main .personnality:nth-child(92) {
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(93) {
   grid-row: auto/span 2;
@@ -576,16 +576,16 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(95) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(96) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(97) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(98) {
-  grid-row: auto/span 2;
+  grid-row: auto/span 1;
 }
 .personnalities main .personnality:nth-child(99) {
   grid-row: auto/span 2;
