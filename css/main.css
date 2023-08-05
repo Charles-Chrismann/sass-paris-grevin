@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Avenir Heavy";
-  src: url("../../assets/fonts/Avenir Heavy.ttf");
+  src: url("assets/fonts/Avenir Heavy.ttf");
 }
 *,
 *::after,
@@ -112,8 +112,8 @@ header nav ul li::before {
   background-origin: border-box;
   background-position: -50% 100%;
   background-repeat: no-repeat;
-  -webkit-mask-image: url("../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
-  mask: url("../assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
+  -webkit-mask-image: url("/assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
+  mask: url("/assets/img/hd-dark-blue-brush-stroke-grunge-effect-png-31628085477a5agxt9rwv-removebg-preview.png");
   -webkit-mask-position-x: center;
   -webkit-mask-position-y: center;
   mask-position: center;
@@ -594,337 +594,337 @@ footer {
   grid-row: auto/span 2;
 }
 .personnalities main .personnality:nth-child(1) {
-  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+  background-image: url("/assets/img/personnalities/000_va2d4.jpg");
 }
 .personnalities main .personnality:nth-child(2) {
-  background-image: url("../../assets/img/personnalities/11043907.webp");
+  background-image: url("/assets/img/personnalities/11043907.webp");
 }
 .personnalities main .personnality:nth-child(3) {
-  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+  background-image: url("/assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
 }
 .personnalities main .personnality:nth-child(4) {
-  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(5) {
-  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+  background-image: url("/assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
 }
 .personnalities main .personnality:nth-child(6) {
-  background-image: url("../../assets/img/personnalities/43252812.jpg");
+  background-image: url("/assets/img/personnalities/43252812.jpg");
 }
 .personnalities main .personnality:nth-child(7) {
-  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+  background-image: url("/assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
 }
 .personnalities main .personnality:nth-child(8) {
-  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(9) {
-  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+  background-image: url("/assets/img/personnalities/5131332938598.jpg");
 }
 .personnalities main .personnality:nth-child(10) {
-  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(11) {
-  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(12) {
-  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+  background-image: url("/assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
 }
 .personnalities main .personnality:nth-child(13) {
-  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+  background-image: url("/assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
 }
 .personnalities main .personnality:nth-child(14) {
-  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+  background-image: url("/assets/img/personnalities/697832-362590-jpg_479822.jpg");
 }
 .personnalities main .personnality:nth-child(15) {
-  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+  background-image: url("/assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
 }
 .personnalities main .personnality:nth-child(16) {
-  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+  background-image: url("/assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
 }
 .personnalities main .personnality:nth-child(17) {
-  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+  background-image: url("/assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
 }
 .personnalities main .personnality:nth-child(18) {
-  background-image: url("../../assets/img/personnalities/cyril.jpg");
+  background-image: url("/assets/img/personnalities/cyril.jpg");
 }
 .personnalities main .personnality:nth-child(19) {
-  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(20) {
-  background-image: url("../../assets/img/personnalities/image.jpg");
+  background-image: url("/assets/img/personnalities/image.jpg");
 }
 .personnalities main .personnality:nth-child(21) {
-  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+  background-image: url("/assets/img/personnalities/images0.persgroep.jpg");
 }
 .personnalities main .personnality:nth-child(22) {
-  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+  background-image: url("/assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
 }
 .personnalities main .personnality:nth-child(23) {
-  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+  background-image: url("/assets/img/personnalities/Jenifer.jpg");
 }
 .personnalities main .personnality:nth-child(24) {
-  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+  background-image: url("/assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
 }
 .personnalities main .personnality:nth-child(25) {
-  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+  background-image: url("/assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
 }
 .personnalities main .personnality:nth-child(26) {
-  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+  background-image: url("/assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
 }
 .personnalities main .personnality:nth-child(27) {
-  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+  background-image: url("/assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
 }
 .personnalities main .personnality:nth-child(28) {
-  background-image: url("../../assets/img/personnalities/Matt+Pokora.jpg");
+  background-image: url("/assets/img/personnalities/Matt+Pokora.jpg");
 }
 .personnalities main .personnality:nth-child(29) {
-  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+  background-image: url("/assets/img/personnalities/musee-grevin1.jpg");
 }
 .personnalities main .personnality:nth-child(30) {
-  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+  background-image: url("/assets/img/personnalities/Nikos-aliagas-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(31) {
-  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(32) {
-  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(33) {
-  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+  background-image: url("/assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
 }
 .personnalities main .personnality:nth-child(34) {
-  background-image: url("../../assets/img/personnalities/stromae.jpg");
+  background-image: url("/assets/img/personnalities/stromae.jpg");
 }
 .personnalities main .personnality:nth-child(35) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(36) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(37) {
-  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+  background-image: url("/assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
 }
 .personnalities main .personnality:nth-child(38) {
-  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+  background-image: url("/assets/img/personnalities/000_va2d4.jpg");
 }
 .personnalities main .personnality:nth-child(39) {
-  background-image: url("../../assets/img/personnalities/11043907.webp");
+  background-image: url("/assets/img/personnalities/11043907.webp");
 }
 .personnalities main .personnality:nth-child(40) {
-  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+  background-image: url("/assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
 }
 .personnalities main .personnality:nth-child(41) {
-  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(42) {
-  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+  background-image: url("/assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
 }
 .personnalities main .personnality:nth-child(43) {
-  background-image: url("../../assets/img/personnalities/43252812.jpg");
+  background-image: url("/assets/img/personnalities/43252812.jpg");
 }
 .personnalities main .personnality:nth-child(44) {
-  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+  background-image: url("/assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
 }
 .personnalities main .personnality:nth-child(45) {
-  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(46) {
-  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+  background-image: url("/assets/img/personnalities/5131332938598.jpg");
 }
 .personnalities main .personnality:nth-child(47) {
-  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(48) {
-  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(49) {
-  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+  background-image: url("/assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
 }
 .personnalities main .personnality:nth-child(50) {
-  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+  background-image: url("/assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
 }
 .personnalities main .personnality:nth-child(51) {
-  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+  background-image: url("/assets/img/personnalities/697832-362590-jpg_479822.jpg");
 }
 .personnalities main .personnality:nth-child(52) {
-  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+  background-image: url("/assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
 }
 .personnalities main .personnality:nth-child(53) {
-  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+  background-image: url("/assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
 }
 .personnalities main .personnality:nth-child(54) {
-  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+  background-image: url("/assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
 }
 .personnalities main .personnality:nth-child(55) {
-  background-image: url("../../assets/img/personnalities/cyril.jpg");
+  background-image: url("/assets/img/personnalities/cyril.jpg");
 }
 .personnalities main .personnality:nth-child(56) {
-  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(57) {
-  background-image: url("../../assets/img/personnalities/image.jpg");
+  background-image: url("/assets/img/personnalities/image.jpg");
 }
 .personnalities main .personnality:nth-child(58) {
-  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+  background-image: url("/assets/img/personnalities/images0.persgroep.jpg");
 }
 .personnalities main .personnality:nth-child(59) {
-  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+  background-image: url("/assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
 }
 .personnalities main .personnality:nth-child(60) {
-  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+  background-image: url("/assets/img/personnalities/Jenifer.jpg");
 }
 .personnalities main .personnality:nth-child(61) {
-  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+  background-image: url("/assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
 }
 .personnalities main .personnality:nth-child(62) {
-  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+  background-image: url("/assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
 }
 .personnalities main .personnality:nth-child(63) {
-  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+  background-image: url("/assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
 }
 .personnalities main .personnality:nth-child(64) {
-  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+  background-image: url("/assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
 }
 .personnalities main .personnality:nth-child(65) {
-  background-image: url("../../assets/img/personnalities/Matt+Pokora.jpg");
+  background-image: url("/assets/img/personnalities/Matt+Pokora.jpg");
 }
 .personnalities main .personnality:nth-child(66) {
-  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+  background-image: url("/assets/img/personnalities/musee-grevin1.jpg");
 }
 .personnalities main .personnality:nth-child(67) {
-  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+  background-image: url("/assets/img/personnalities/Nikos-aliagas-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(68) {
-  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(69) {
-  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(70) {
-  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+  background-image: url("/assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
 }
 .personnalities main .personnality:nth-child(71) {
-  background-image: url("../../assets/img/personnalities/stromae.jpg");
+  background-image: url("/assets/img/personnalities/stromae.jpg");
 }
 .personnalities main .personnality:nth-child(72) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(73) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(74) {
-  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+  background-image: url("/assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
 }
 .personnalities main .personnality:nth-child(75) {
-  background-image: url("../../assets/img/personnalities/000_va2d4.jpg");
+  background-image: url("/assets/img/personnalities/000_va2d4.jpg");
 }
 .personnalities main .personnality:nth-child(76) {
-  background-image: url("../../assets/img/personnalities/11043907.webp");
+  background-image: url("/assets/img/personnalities/11043907.webp");
 }
 .personnalities main .personnality:nth-child(77) {
-  background-image: url("../../assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
+  background-image: url("/assets/img/personnalities/251512-matt-pokora-sa-statue-de-cire-diapo-1.jpg");
 }
 .personnalities main .personnality:nth-child(78) {
-  background-image: url("../../assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/3185212-kendji-girac-pose-au-cote-de-sa-statue-a-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(79) {
-  background-image: url("../../assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
+  background-image: url("/assets/img/personnalities/3966475-nicolas-sarkozy-avec-son-double-de-cire-950x0-3.jpg");
 }
 .personnalities main .personnality:nth-child(80) {
-  background-image: url("../../assets/img/personnalities/43252812.jpg");
+  background-image: url("/assets/img/personnalities/43252812.jpg");
 }
 .personnalities main .personnality:nth-child(81) {
-  background-image: url("../../assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
+  background-image: url("/assets/img/personnalities/4674100.jpg-r_1280_720-f_jpg-q_x-xxyxx.jpg");
 }
 .personnalities main .personnality:nth-child(82) {
-  background-image: url("../../assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/4768271-eric-antoine-jeff-panacloc-inaugure-sa-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(83) {
-  background-image: url("../../assets/img/personnalities/5131332938598.jpg");
+  background-image: url("/assets/img/personnalities/5131332938598.jpg");
 }
 .personnalities main .personnality:nth-child(84) {
-  background-image: url("../../assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
+  background-image: url("/assets/img/personnalities/538521-mika-et-son-double-du-musee-grevin-950x0-2.jpg");
 }
 .personnalities main .personnality:nth-child(85) {
-  background-image: url("../../assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
+  background-image: url("/assets/img/personnalities/5903075-daniel-craig-et-sean-connery-wachsfigure-950x0-1.jpg");
 }
 .personnalities main .personnality:nth-child(86) {
-  background-image: url("../../assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
+  background-image: url("/assets/img/personnalities/5edf6f492878c_pierre_richard_grevin-3956809.jpg");
 }
 .personnalities main .personnality:nth-child(87) {
-  background-image: url("../../assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
+  background-image: url("/assets/img/personnalities/5edf8a1bf2d64_off_pere_fouras_au_musee_grevin-00_00_01_20-4298872.jpg");
 }
 .personnalities main .personnality:nth-child(88) {
-  background-image: url("../../assets/img/personnalities/697832-362590-jpg_479822.jpg");
+  background-image: url("/assets/img/personnalities/697832-362590-jpg_479822.jpg");
 }
 .personnalities main .personnality:nth-child(89) {
-  background-image: url("../../assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
+  background-image: url("/assets/img/personnalities/870x489_philippe_jaroussky_a_grevin_photo_virginie_ribaut_1.jpg");
 }
 .personnalities main .personnality:nth-child(90) {
-  background-image: url("../../assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
+  background-image: url("/assets/img/personnalities/9a399a9acbde77c915760d06989f3f23.jpg");
 }
 .personnalities main .personnality:nth-child(91) {
-  background-image: url("../../assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
+  background-image: url("/assets/img/personnalities/BESTIMAGE-00545583-000031.jpg");
 }
 .personnalities main .personnality:nth-child(92) {
-  background-image: url("../../assets/img/personnalities/cyril.jpg");
+  background-image: url("/assets/img/personnalities/cyril.jpg");
 }
 .personnalities main .personnality:nth-child(93) {
-  background-image: url("../../assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/deconnade-parisienne-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(94) {
-  background-image: url("../../assets/img/personnalities/image.jpg");
+  background-image: url("/assets/img/personnalities/image.jpg");
 }
 .personnalities main .personnality:nth-child(95) {
-  background-image: url("../../assets/img/personnalities/images0.persgroep.jpg");
+  background-image: url("/assets/img/personnalities/images0.persgroep.jpg");
 }
 .personnalities main .personnality:nth-child(96) {
-  background-image: url("../../assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
+  background-image: url("/assets/img/personnalities/inauguration-statue-michael-jackson-grevin.webp");
 }
 .personnalities main .personnality:nth-child(97) {
-  background-image: url("../../assets/img/personnalities/Jenifer.jpg");
+  background-image: url("/assets/img/personnalities/Jenifer.jpg");
 }
 .personnalities main .personnality:nth-child(98) {
-  background-image: url("../../assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
+  background-image: url("/assets/img/personnalities/La statue de Mbappé fait son entrée au musée.jpg");
 }
 .personnalities main .personnality:nth-child(99) {
-  background-image: url("../../assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
+  background-image: url("/assets/img/personnalities/le-pass-tele-loisirs-vous-invite-au-musee-grevin-tout-savoir-sur-la-realisation-des-statues-de-cire.jpg");
 }
 .personnalities main .personnality:nth-child(100) {
-  background-image: url("../../assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
+  background-image: url("/assets/img/personnalities/Maitre-Gims-a-sa-statue-au-musee-Grevin.jpg");
 }
 .personnalities main .personnality:nth-child(101) {
-  background-image: url("../../assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
+  background-image: url("/assets/img/personnalities/Martin-Fourcade-gauche-posesa-statue-25-musee-Grevin_0.webp");
 }
 .personnalities main .personnality:nth-child(102) {
-  background-image: url("../../assets/img/personnalities/Matt+Pokora+Sculpture+hyperrealiste+hyperrealisme+hyperrealistic+hyperrealism+scenographie+scenography+experience+immersive+set+design+decors+decoration+visual+merchandising+museum+exposition+immersion+immersif.jpg");
+  background-image: url("/assets/img/personnalities/Matt+Pokora+Sculpture+hyperrealiste+hyperrealisme+hyperrealistic+hyperrealism+scenographie+scenography+experience+immersive+set+design+decors+decoration+visual+merchandising+museum+exposition+immersion+immersif.jpg");
 }
 .personnalities main .personnality:nth-child(103) {
-  background-image: url("../../assets/img/personnalities/musee-grevin1.jpg");
+  background-image: url("/assets/img/personnalities/musee-grevin1.jpg");
 }
 .personnalities main .personnality:nth-child(104) {
-  background-image: url("../../assets/img/personnalities/Nikos-aliagas-grevin.jpg");
+  background-image: url("/assets/img/personnalities/Nikos-aliagas-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(105) {
-  background-image: url("../../assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-anne-roumanoff-seduite-par-sa-statue-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(106) {
-  background-image: url("../../assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
+  background-image: url("/assets/img/personnalities/photos-kad-merad-inaugure-sa-statue-de-cire-au-musee-grevin.jpg");
 }
 .personnalities main .personnality:nth-child(107) {
-  background-image: url("../../assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
+  background-image: url("/assets/img/personnalities/Photos-Laetitia-Casta-la-bombe-francaise-a-inaugure-sa-statue-au-musee-Grevin-!.jpg");
 }
 .personnalities main .personnality:nth-child(108) {
-  background-image: url("../../assets/img/personnalities/stromae.jpg");
+  background-image: url("/assets/img/personnalities/stromae.jpg");
 }
 .personnalities main .personnality:nth-child(109) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd41Rfin1rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(110) {
-  background-image: url("../../assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
+  background-image: url("/assets/img/personnalities/tumblr_inline_ohxd7nyKS81rrd5ve_500.jpg");
 }
 .personnalities main .personnality:nth-child(111) {
-  background-image: url("../../assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
+  background-image: url("/assets/img/personnalities/XVM806c5978-23b1-11e8-a08d-0ef2079ac73d.webp");
 }
 
 @media screen and (max-width: 1200px) {
